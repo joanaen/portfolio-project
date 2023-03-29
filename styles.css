@@ -50,25 +50,53 @@ p {
   line-height: 3;
   font-size: 24px;
 }
-.about-section h1 {
+
+.image-project {
+  border-radius: 20px;
+}
+.content-container h1 {
   font-size: 64px;
   line-height: 80px;
 }
-.about-section h2 {
+.content-container h2 {
   font-family: var(--default-font-family);
   font-size: 18px;
 }
-.about-section p {
+.content-container p {
   font-size: 15px;
   line-height: 1.8;
 }
 
-.about-section-content {
+.content {
   margin: 30px;
 }
 
-.about-section {
+.content-container {
   padding: 160px 20px;
+}
+
+.content h3 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.content p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: -6px;
+}
+
+.unen-photo {
+  border-radius: 20px;
+}
+
+.dictionary-photo {
+  border-radius: 20px;
 }
 .photo-container {
   width: 400px;
@@ -110,7 +138,15 @@ p {
 }
 
 .project-description {
-  padding: 120px 60px;
+  padding: 100px 60px;
+}
+
+.unen {
+  margin-top: -80px;
+}
+
+.dictionary {
+  margin-top: -80px;
 }
 
 @media (max-width: 900px) {
@@ -129,7 +165,7 @@ p {
   .hero {
     padding: 80px 20px;
   }
-  .about-section {
+  .content-container {
     text-align: center;
   }
   .hero p {
@@ -140,7 +176,7 @@ p {
     line-height: 1.2;
     margin-top: 26px;
   }
-  .about-section-content p {
+  .content p {
     font-size: 14px;
   }
 
