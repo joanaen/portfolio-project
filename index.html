@@ -24,6 +24,12 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poiret+One&family=Poppins:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
@@ -64,23 +70,28 @@
     </nav>
 
     <div class="hero">
-      <p>👋 Hello, I am</p>
-      <h1>Joana Nenu</h1>
-      <h2 class="mb-5">Front-end developer based in Portugal</h2>
+      <h1 class="">Joana Nenu</h1>
+      <h2 class="mb-4">Front-end developer based in Portugal</h2>
       <div>
-        <a href="#" class="btn btn-branding">Contact me</a>
+        <a href="/contact.html" class="btn btn-branding">Contact me</a>
       </div>
     </div>
-    <p class="text-center m-5">Check out some of my projects below</p>
-    <div class="container">
+    <p class="intro-line text-center m-5">Check out some of my projects</p>
+    <hr class="hr" />
+
+    <div class="container content-bloc">
       <div class="row mb-5">
-        <div class="col d-none d-lg-block">
-          <img src="images/unen2.png" class="img-fluid image-project" alt="" />
+        <div class="col-md-6">
+          <img
+            src="images/unen2.png"
+            class="img-fluid image-project resize-on-mobile"
+            alt=""
+          />
         </div>
-        <div class="col">
+        <div class="col-md-6">
           <div class="project-description-unen">
             <h2 class="mb-5">UNEN Studio</h2>
-            <p class="mb-5 text-muted">
+            <p class="info p-4 mb-5 text-muted">
               UNEN is a ceramic brand created by multidisciplinary artist Joana
               Nenu. Behind each piece, there is a story. The different stories
               are the heart of each piece and are what makes them special. So
@@ -90,17 +101,24 @@
             <a
               href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/001/193/872/original/UNEN_STUDIO_%F0%9F%8D%B6.html?1665003491"
               target="_blank"
-              class="btn btn-branding-outline"
+              class="btn-2 btn btn-branding-outline"
               >See page</a
             >
           </div>
         </div>
       </div>
-      <div class="row mb-5">
-        <div class="col">
+      <div class="row mb-5 flex-row-reverse">
+        <div class="col-md-6 order-md-1">
+          <img
+            src="images/weather-app-2.png"
+            class="img-fluid image-project resize-on-mobile img-weather"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6 order-md-2">
           <div class="project-description-weather">
             <h2 class="mb-5">Weather App</h2>
-            <p class="mb-5 text-muted">
+            <p class="info p-4 mb-5 text-muted">
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts. Separated
               they live in Bookmarksgrove right at the coast of the Semantics, a
@@ -109,32 +127,44 @@
             <a
               href="https://spiffy-gaufre-69549d.netlify.app/"
               target="_blank"
-              class="btn btn-branding-outline"
+              class="btn-2 btn btn-branding-outline"
               >See project</a
             >
           </div>
         </div>
-        <div class="col d-none d-lg-block">
-          <img src="images/weather-app-2.png" class="img-fluid" alt="" />
-        </div>
       </div>
+
       <div class="row mb-5">
-        <div class="col d-none d-lg-block">
-          <img src="images/dictionary.png" class="img-fluid" alt="" />
+        <div class="col-md-6 d-sm-block">
+          <img
+            src="images/dictionary.png"
+            class="img-fluid image-project resize-on-mobile img-dictionary"
+            alt=""
+          />
         </div>
-        <div class="col">
+        <div class="col-md-6">
           <div class="project-description-dictionary">
             <h2 class="mb-5">Dictionary App</h2>
-            <p class="mb-5 text-muted">
+            <p class="info p-4 mb-5 text-muted">
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts. Separated
               they live in Bookmarksgrove right at the coast of the Semantics, a
               large language ocean. A small river named Duden flows.
             </p>
-            <a href="" class="btn btn-branding-outline">See project</a>
+            <a href="" class="btn-2 btn btn-branding-outline">See project</a>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      $(".navbar-toggler").click(function () {
+        if ($(".navbar-collapse").hasClass("show")) {
+          $("body").css("overflow-y", "auto");
+        } else {
+          $("body").css("overflow-y", "hidden");
+        }
+      });
+    </script>
   </body>
 </html>
