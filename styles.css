@@ -36,6 +36,10 @@ h2 {
   font-size: 56px;
   margin-top: -10px;
 }
+
+h4 {
+  font-size: 48px;
+}
 p {
   font-family: var(--default-font-family);
   font-weight: 500;
@@ -178,6 +182,47 @@ p {
 .h1-work {
   margin-bottom: 120px;
 }
+footer .contact-box {
+  background-color: #e5ded4;
+  padding: 50px 120px;
+  border-radius: 10px;
+}
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .contact-box a {
+  margin-top: 12px;
+}
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+footer {
+  margin: 120px 0;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: black;
+  background-color: #e5ded4;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 46px !important;
@@ -255,6 +300,34 @@ p {
 
   .img-dictionary {
     margin-top: -20px;
+  }
+
+  footer .contact-box {
+    padding: 20px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+  footer {
+    margin-top: -22px;
+  }
+
+  .contact-box p {
+    font-size: 14px;
+  }
+  footer .btn-branding {
+    font-size: 15px;
+    margin-top: 3px !important;
+    line-height: 18px;
+  }
+
+  footer .email-link {
+    font-size: 18px;
+  }
+
+  footer .social-links {
+    margin-top: -60px !important;
   }
 }
 
