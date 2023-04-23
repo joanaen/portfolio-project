@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me</title>
+    <meta
+      name="description"
+      content="Joana Nenu is a font-end developer based in Portugal. Skilled in React, Javascript, HTML & CSS and certified Webflow Developer"
+    />
+
+    <title>About me - Front-end developer</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -43,8 +48,8 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-white">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo-hq.png" alt="" class="logo" />
+        <a class="navbar-brand" href="/" title="Homepage">
+          <img src="images/logo-hq.png" alt="Joana Nenu logo" class="logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -59,10 +64,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="/">Home</a>
-            <a class="nav-link active" href="/about.html">About</a>
-            <a class="nav-link" href="/work.html">Work</a>
-            <a class="nav-link" href="/contact.html">Contact</a>
+            <a class="nav-link" aria-current="page" href="/" title="Homepage"
+              >Home</a
+            >
+            <a class="nav-link active" href="/about.html" title="About Joana"
+              >About</a
+            >
+            <a class="nav-link" href="/work.html" title="Work Projects">Work</a>
+            <a class="nav-link" href="/contact.html" title="Contact Joana"
+              >Contact</a
+            >
           </div>
         </div>
       </div>
@@ -88,16 +99,62 @@
               you're looking for a passionate front-end developer , I would be
               thrilled to hear from you.
             </p>
-            <a href="/work.html" class="btn btn-branding mt-3"
+            <a href="/work.html" class="btn btn-branding text-center mx-auto"
               >See my projects</a
             >
           </div>
         </div>
 
         <div class="col-lg-6 col-sm-12">
-          <div class="photo-container"></div>
+          <div class="photo-container img-fluid"></div>
         </div>
       </div>
+      <footer>
+        <div
+          class="contact-box d-flex justify-content-between mb-5"
+          style="max-width: 1130px"
+        >
+          <div>
+            <h4>Work Inquiry</h4>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a href="/contact.html" class="btn btn-branding"> Contact me </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5 p-5">
+          <a href="mailto:joananenu@gmail.com" class="email-link"
+            >joananenu@gmail.com
+          </a>
+        </div>
+        <div class="social-links d-flex justify-content-center mb-5">
+          <a
+            href="https://github.com/joanaen"
+            target="_blank"
+            title="GitHub Profile"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.behance.net/joanan"
+            target="_blank"
+            title="Behance Profile"
+            ><i class="fa-brands fa-behance"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/joanaen/"
+            target="_blank"
+            title="Instagram Profile"
+          >
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <p class="text-center mt-5">
+          <a href="https://github.com/joanaen/portfolio-project">
+            Open-sourced code</a
+          >
+          by Joana Nenu
+        </p>
+      </footer>
     </div>
   </body>
 </html>

@@ -232,6 +232,10 @@ footer .social-links a:hover {
   h2 {
     font-size: 34px;
   }
+
+  .btn-branding {
+    text-align: center !important;
+  }
   .project-description-dictionary,
   .project-description-unen {
     padding: 60px 4px 40px;
@@ -282,9 +286,10 @@ footer .social-links a:hover {
     width: 300px;
     height: 200px;
     margin-left: 16px;
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 20px;
     background-position: center center;
+    margin-bottom: 60px;
   }
 
   .collapse {
@@ -314,12 +319,12 @@ footer .social-links a:hover {
   }
 
   .contact-box p {
-    font-size: 14px;
+    font-size: 11px;
   }
   footer .btn-branding {
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 3px !important;
-    line-height: 18px;
+    line-height: 16px;
   }
 
   footer .email-link {
